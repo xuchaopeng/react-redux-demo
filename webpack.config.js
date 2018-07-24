@@ -77,7 +77,7 @@ module.exports = {
 	},
     devServer: {
         contentBase: './app', //指定服务器的目录
-        port: 8080   //指定端口
+        port: 8090   //指定端口
     },
 	plugins: [
 		new HtmlWebpackPlugin({
