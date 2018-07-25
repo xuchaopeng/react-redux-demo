@@ -18,7 +18,7 @@ const  todo = (state,action) => {
 let morenzhi  = [
 	{"id":0,"text":'吃饭',"completed":true},
 	{"id":1,"text":'睡觉',"completed":true},
-	{"id":2,"text":'打豆豆',"completed":true}
+	{"id":2,"text":'打豆豆',"completed":false}
 ]
 const todos = (state=morenzhi,action) => {
 	switch (action.type){

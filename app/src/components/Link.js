@@ -1,5 +1,5 @@
-import React from "react";
-const Link = ({active,children,onClick}) => {
+import React,{Component} from "react";
+const Link = ({active,children,onClick,filter}) => {
 	if(active){
 		return <span>{children}</span>
 	}
@@ -8,12 +8,12 @@ const Link = ({active,children,onClick}) => {
 			href="#"
 			onClick={e=>{
 				e.preventDefault();
-				onClick();
+				console.log(filter);
+				onClick(filter);
 			}}
 			>
 			{children}
 		</a>
 	)
 }
-
 export default Link 
